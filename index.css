@@ -1,0 +1,103 @@
+
+
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Kavoon&display=swap');
+
+body{
+    font-family: "Inter", sans-serif;
+    background-color: #484FB7;
+    margin: 0;
+}
+
+
+h1, h2 {
+    font-family: "Kavoon", sans-serif;
+    color: #ffffff;
+    text-align: center;
+}
+
+h1 {
+    z-index: 1000;
+    font-size: 3em;
+    padding: 2em;
+    background-color: #6B8FE7;
+    border-radius: 0 0 15px 15px;
+    margin: 0;
+    
+}
+header p {
+    padding: 1em;
+    background-color: #D9526F;
+    border-radius: 0 0 15px 15px;
+    margin: -5px auto 10px auto;
+    width: 95%;
+    color: #ffffff;
+    font-style: italic;
+    text-align: center;
+
+}
+nav h2 {
+    font-size: 1.5em;
+}
+h2 {
+    font-size: 2em;
+    text-align:left;
+    margin-left: 10px;
+}
+h3 {
+    font-size: 1.5em;
+    color: #E9BB57;
+    margin: 15px;
+}
+h4 {
+    font-size: 1.15em;
+    color: #484FB7;
+}
+
+nav{
+    background-color:#E9BB57; 
+    position: fixed;
+    top:0;
+    right:0;
+    border-radius: 0 0 15px 15px;
+    width: 25%; 
+}
+
+.services-container {
+    background-color: #ffffff;
+    padding: 1em;
+    border-radius: 10px;
+    width: 85%;
+    margin: auto;
+    margin-bottom: 20px;
+}
+.services-container div{
+    margin: 5px;
+}
+
+#our-services img{
+    margin-left: 10px;
+}
+#why-choose-us{
+    padding: 5px;
+    background-color: #D9526F;
+}
+#choose-container{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    row-gap: 10px;
+    padding: 10px;
+    column-gap: 5px;
+    
+}
+#choose-container p{
+    text-align: center;
+    border-radius: 15px;
+    padding: 50px;
+    white-space: normal;
+    margin: 0 auto;
+    width: 50%;
+    font-weight: bold;
+    font-size:1.25em;
+
+}
