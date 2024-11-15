@@ -43,6 +43,7 @@ h2 {
     font-size: 2em;
     text-align:left;
     margin-left: 10px;
+    margin-top: 5px;
 }
 h3 {
     font-size: 1.5em;
@@ -100,4 +101,43 @@ nav{
     font-weight: bold;
     font-size:1.25em;
 
+}
+
+#first-step{
+    background-color:#D9526F;
+    padding: 5px;
+}
+
+
+#first-step div{
+    margin-left: 5px;
+}
+
+#first-step button{
+    width: 75%;
+    margin:auto;
+    background-color: #ffffff;
+    color: #1E1E1E;
+    padding: 20px;
+    border-radius: 15px;
+    font-weight: bold;
+    text-transform: uppercase;
+    box-shadow: 2px 2px 4px #1E1E1E;
+    border: none;
+}
+
+footer{
+    background-color:#6B8FE7;
+    border-radius: 0 0 35px 35px;
+    margin:auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+    margin-bottom: 20px;
+}
+footer p{
+    display: inline;
+    color: #ffffff;
+    padding: 25px;
+    font-size: .75em;
 }
