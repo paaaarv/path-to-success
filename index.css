@@ -37,10 +37,16 @@ header p {
     font-style: italic;
     text-align: center;
     
+}
 
+nav ul{
+    padding: 0;
 }
 nav h2 {
     font-size: 1.5em;
+    font-family: "Inter", sans-serif;
+    display:inline;
+    color: #1E1E1E;
 }
 h2 {
     font-size: 2em;
@@ -71,6 +77,10 @@ nav li{
 }
 nav li:first-child{
     display:block;
+    text-transform:uppercase;
+    text-align: center;
+    font-style:italic;
+    
 }
 
 
