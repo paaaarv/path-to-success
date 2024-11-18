@@ -103,6 +103,25 @@ nav{
     font-size:1.25em;
 
 }
+#pricing{
+    margin-bottom: 5px;
+}
+#pricing table{
+    margin: auto;
+}
+table, tr:first-child{
+    background-color: #E9BB57;
+}
+.table-labels{
+    background-color: #E9BB57;
+    text-align: center;
+
+}
+
+ td{
+    background-color: #ffffff;
+    padding: 15px;
+}
 
 #first-step{
     background-color:#D9526F;
