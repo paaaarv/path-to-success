@@ -1,7 +1,13 @@
+/* -------------------- CSS BY NAME -------------------------------------- */
 
 
-
+/* -------------------- IMPORTED FONTS -------------------------------------- */
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Kavoon&display=swap');
+
+/*-------------------- CSS REST ---------------------------------------------------*/
+
+/* --------------------GLOBAL STYLES (mobile first/small) --------------------*/
+
 
 body{
     font-family: "Inter", sans-serif;
@@ -83,8 +89,11 @@ nav li:first-child{
     
 }
 
+.services-container h3{
+    width: 100%;
+}
 
-.services-container {
+.service-container {
     background-color: #ffffff;
     padding: 1em;
     border-radius: 10px;
@@ -92,7 +101,7 @@ nav li:first-child{
     margin: auto;
     margin-bottom: 20px;
 }
-.services-container div{
+.service-container div{
     margin: 5px;
 }
 
@@ -125,15 +134,28 @@ nav li:first-child{
 #pricing{
     margin-bottom: 5px;
 }
+#pricing-container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    row-gap: 10px;
+    justify-content: center;
+}
 #pricing table{
     margin: auto;
 }
+
 table, tr:first-child{
     background-color: #E9BB57;
 }
+
+.table-container{
+    width: 100%;
+
+}
 .table-labels{
     background-color: #E9BB57;
-    text-align: center;
+   text-align: center;
 
 }
 
@@ -147,9 +169,14 @@ table, tr:first-child{
     padding: 5px;
 }
 
-
 #first-step div{
     margin-left: 5px;
+}
+
+#first-step-container{
+    display: flex;
+    flex-wrap: wrap;
+
 }
 
 #first-step button{
@@ -174,9 +201,108 @@ footer{
     justify-items: center;
     margin-bottom: 20px;
 }
-footer p{
+footer > p{
     display: inline;
     color: #ffffff;
     padding: 25px;
     font-size: .75em;
+}
+
+/*-------------------- MEDIA QUERY (medium) --------------------------------*/
+
+@media screen and (min-width: 620px){
+
+    .services-container{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .service-container{
+        width: 40%;
+        height: 400px;
+    }
+
+    .service-container:nth-child(even):last-child{
+        width: 90%;
+        height: auto;
+    }
+    #choose-container{
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+    #choose-container p {
+        width: 25%;
+    }
+    .table-container{
+        width: 45%;
+    }
+    #first-step-container{
+        align-items: flex-start;
+    }
+    #first-step-container p, #first-step-container button{
+        width: 45%;
+    }
+
+
+
+}
+
+/*-------------------- MEDIA QUERY (large) ------------------------------------*/
+@media screen and (min-width: 950px){
+    nav{
+        width: 50%;
+    }
+    nav li:first-child{
+        display: none;
+    }
+    nav li{
+        display: block;
+        text-transform: uppercase;
+    }
+    nav a{
+        text-decoration: none;
+        color: #1E1E1E;
+        font-weight: bold;
+    }
+    nav ul {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+    h1{
+        padding-top: 50px;
+    }
+    #all-services-container{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    #all-services-container section{
+        width: 23%;
+    }
+     h3{
+        font-size: 1.2em;
+        white-space: nowrap;
+
+    }
+    .service-container{
+        width: 100%;
+    }
+
+    .table-container{
+        width: 25%
+    }
+    #first-step-container button{
+        width: 25%;
+    }
+}
+
+
+
+/*-------------------- MEDIA QUERY (xl) ---------------------------------------*/
+
+@media screen and (min-width: 1200px){
+    header, main, footer{
+        max-width: 1100px;
+        margin: auto;
+    }
 }
